@@ -1,0 +1,339 @@
+@charset "UTF-8";
+.redColor {
+    color:#ED4A4B;
+}
+/*顶部头部分开始*/
+.topHeader {
+    margin: 0 auto;
+    width: 1260px;
+    height: 55px;
+}
+.l-topHeader {
+    width: 133px;
+    height: 55px;
+}
+.l-topHeader a {
+    display: block;
+    width: 133px;
+    height: 44px;
+    background: url("../images/logo_b5525b7.png") no-repeat;
+}
+
+#m-topHeader {
+    height: 55px;
+    width: 500px;
+    margin-left: 170px;
+    float: left;
+    /*background-color: red;*/
+    position: relative;
+}
+#m-topHeader li {
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+#m-topHeader .yys {
+    width: 105px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -53px;
+}
+#m-topHeader .top-yys {
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -53px;
+    z-index: 2;
+    /*opacity: 0;*/
+    overflow: hidden;
+}
+#m-topHeader .top-yys ul li {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+.r-topHeader {
+    
+}
+.r-topHeader ul li {
+    float: left;
+    height: 55px;
+    overflow: hidden;
+}
+.r-topHeader ul li a {
+    display: block;
+    padding: 0 15px;
+    height: 55px;
+    line-height: 55px;
+}
+.r-topHeader ul li a.a3 {
+     padding: 0 25px 0 15px;
+    background: url("../images/2016-10-07_104423.png") no-repeat 99px 20px;
+ }
+.r-topHeader ul li a.a4 {
+    padding: 0;
+    width: 100px;
+    text-align: center;
+}
+.r-topHeader ul li a.aHover {
+    background-color:#FFA700;
+    color:#fff;
+}
+.topHeader .allGame {
+    width: 1260px;
+    height: 449px;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+/*顶部头部分结束*/
+
+/*<!--main_banner部分开始-->*/
+.main_banner {
+    overflow: hidden;
+    width: 100%;
+    height: 585px;
+    position: relative;
+    background: url("../images/main_banner_04fad6b.jpg") no-repeat top center;
+}
+.main_banner .qingming {
+    width: 815px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 585px;
+    background: url("../images/qingmin_5e1c3bc.png")no-repeat;
+    opacity: 0;
+}
+.main_banner .shenle {
+    width: 556px;
+    height: 781px;
+    position: absolute;
+    left: 50%;
+    margin-left: -344px;
+    top: 585px;
+    background: url("../images/shenle_77d66bd.png");
+    opacity: 0;
+}
+.main_banner .slogan {
+    width: 171px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    margin-left: -530px;
+    top: -450px;
+    background: url("../images/slogon_fb1e8a7.png");
+    opacity: 0;
+}
+.main_banner a.open_game {
+    width: 135px;
+    height: 118px;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -535px;
+    z-index: 11;
+}
+.main_banner a.open_game img {
+    width: 102px;
+}
+.main_banner .logo {
+    width: 70px;
+    height: 199px;
+    position: absolute;
+    left: -140px;
+    top: 38px;
+    z-index: 20;
+    text-align: center;
+    line-height: 199px;
+    opacity: 0;
+}
+.main_banner .logo img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.main_banner .qingming-header {
+    position: absolute;
+    width: 280px;
+    top: 20px;
+    left: 50%;
+    margin-left: -220px;
+    z-index: 10;
+    opacity: 0;
+}
+.main_banner .shenle-header {
+    position: absolute;
+    width: 100px;
+    top: 170px;
+    left: 50%;
+    margin-left: 200px;
+    z-index: 10;
+    opacity: 0;
+}
+.main_banner .baoZou-header {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0;
+}
+.main_banner .baoZou-header2 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -420px;
+    z-index: 10;
+    opacity: 0;
+}
+.main_banner .baoZou-header3 {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    z-index: 10;
+    opacity: 0;
+}
+
+/*青蛙点击出来遮罩效果*/
+#bigBg {
+    width: 0;
+    height: 4000px;
+    /*display: none;*/
+    position: fixed;
+    background-color: rgba(255,255,255,0.8);
+    top:0;
+    left: 0;
+    z-index: 999;
+}
+#bigBg>img {
+    width: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -380px;
+    margin-left: -756px;
+    z-index: 1000;
+}
+#bigBg>span {
+    cursor: pointer;
+    width: 40px;
+    display: none;
+    height: 38px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -297px;
+    margin-left: 597px;
+    z-index: 1001;
+    background: url("../images/2016-10-08_213933.png") no-repeat;
+}
+
+/*<!--top_bar开始-->*/
+#top_bar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 20;
+}
+#top_bar.fixedBar {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255,0.8);
+}
+#top_bar .topnav_list {
+    opacity: 1;
+}
+#top_bar .topnav_list li{
+    margin-top: 35px;
+    width: 118px;
+    height: 65px;
+    float: left;
+    position: relative;
+}
+#top_bar .topnav_list li a {
+    margin-top: 8px;
+    display: block;
+    width: 100px;
+    height: 65px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #000;
+}
+#top_bar .topnav_list li a:hover {
+    color:#ED4A4B;
+}
+#top_bar .topnav_list li span {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background-image: url("../images/index_z_e1d8d3c.png");
+    background-position: -1529px -113px;
+    width: 15px;
+    height: 24px;
+}
+#top_bar .topnav_list li em {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #E1EBEB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 50%;
+    margin-left: -16px;
+    bottom: 0;
+    display: none;
+}
+#top_bar .left_part {
+    cursor: pointer;
+    width: 351px;
+    height: 81px;
+    margin-top: 9px;
+    margin-left: 10px;
+    background: url("../images/2016-10-07_144816.png") no-repeat;
+    display: none;
+}
+#top_bar .top_more_l,#top_bar .top_more_r {
+    width: 100%;
+    height: 160px;
+    background-color: #E1EBEB;
+    position: absolute;
+    top: 100px;
+    display: none;
+    z-index: 19;
+}
+#top_bar .top_more_l a,#top_bar .top_more_r a {
+    float: right;
+    width: 222px;
+    height: 105px;
+    border-right: 1px solid #ccc;
+    margin-top: 28px;
+}
+#top_bar .top_more_l a span,#top_bar .top_more_r a span {
+    width: 84px;
+    height: 105px;
+    display: block;
+    margin: 0 auto;
+}
+.top_more_r p {
+    width: 300px;
+    height: 105px;
+    float: right;
+    margin-top: 28px;
+}
+.top_more_r p span {
+    width: 266px;
+    height: 105px;
+    display: block;
+    margin: 0 auto;
+}

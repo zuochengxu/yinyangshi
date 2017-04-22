@@ -1,0 +1,226 @@
+
+/*strategy开始*/
+.strategy_section{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #fff url("../images/strategy_section/strategy_bg.jpg") bottom center no-repeat;
+}
+/*strategy_tabs开始*/
+.strategy_tabs{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.strategy_tabs .tab_name{
+    float: left;
+    width: 134px;
+    height: 85px;
+    margin-right: 12px;
+    background: url("../images/strategy_section/main_sprite1.png") no-repeat -639px -426px;
+}
+.strategy_tabs .sperate_dot{
+    display: block;
+    margin-top: 50px;
+    float: left;
+    width: 44px;
+    height: 4px;
+    background:url("../images/strategy_section/main_sprite1.png") no-repeat -1502px -103px;
+}
+.strategy_tabs a {
+    position: relative;
+    float: left;
+    display: block;
+    width: 96px;
+    height: 91px;
+    margin: 5px 8px 0;
+}
+.strategy_tabs a.active em, .strategy_tabs a:hover em {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 0;
+    display: block;
+}
+.strategy_tabs a span {
+    background-image:url("../images/strategy_section/main_sprite1.png");
+    position: relative;
+    z-index: 2;
+    width: 68px;
+    height: 39px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+}
+.strategy_tabs .xinshou span{
+    background-position: -1108px -113px;
+}
+.strategy_tabs .rumen span{
+    background-position: -1410px -113px;
+    margin-top: 27px;
+    width: 75px;
+    height: 31px;
+}
+.strategy_tabs .jinjie span{
+    background-position: -1176px -113px;
+    margin-top: 23px;
+    width: 75px;
+    height: 38px;
+}
+.strategy_tabs .more span{
+    background-position: -1330px -113px;
+    margin-top: 28px;
+    width: 80px;
+    height: 31px;
+}
+.strategy_tabs a em {
+    background-image:url("../images/strategy_section/main_sprite1.png");
+    background-position: -763px -326px;
+    top: 10px;
+    left: 0;
+    position: absolute;
+    width: 96px;
+    height: 91px;
+    opacity: 0;
+    transition: all .3s linear;
+    background-repeat: no-repeat;
+}
+/*strategy_tabs结束*/
+
+/*strategy_list开始*/
+.strategy_list{
+    position: relative;
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.strategy_list ul .seperate_line {
+    background-image: url("../images/strategy_section/main_sprite1.png");
+    background-position: -127px 0px;
+    position: absolute;
+    width: 18px;
+    height: 274px;
+    left: -34px;
+    top: 0;
+    background-repeat: no-repeat;
+}
+.strategy_list ul .seperate_line_right {
+    background-position: -127px 0px;
+    position: absolute;
+    width: 18px;
+    height: 274px;
+    right: -34px;
+    top: 0;
+    background-repeat: no-repeat;
+    background-image:url("../images/strategy_section/main_sprite1.png");
+}
+.strategy_list ul .strategy_item {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 244px;
+    transition: all .3s ease;
+}
+.strategy_item:hover {
+    -webkit-transform: translate3d(0,-10px,0);
+    -moz-transform: translate3d(0,-10px,0);
+    -ms-transform: translate3d(0,-10px,0);
+    -o-transform: translate3d(0,-10px,0);
+    transform: translate3d(0,-10px,0);
+}
+.strategy_list ul.list {
+    margin-top: 28px;
+}
+.strategy_list ul.show {
+    z-index: 3;
+    opacity: 1;
+}
+.strategy_list ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .3s linear;
+}
+.strategy_list ul.list li {
+    float: left;
+    width: 104px;
+    height: 270px;
+    padding-top: 15px;
+    margin-left: 50px;
+    position: relative;
+}
+.strategy_item:hover .pic_circle {
+    border-color: #fccc00;
+}
+.strategy_list ul .pic_circle {
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    margin-left: -52px;
+}
+.strategy_list ul.more {
+    width: 780px;
+    padding-left: 38px;
+}
+.strategy_list ul.more li {
+    float: left;
+    margin-right: 55px;
+    width: 325px;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px dotted #333;
+}
+.strategy_list ul.more li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.strategy_list ul.more li p {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+}
+.strategy_list ul.more li p:hover{
+    color: #C1831C;
+}
+.strategy_list ul.more li p i {
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid #333;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.strategy_list ul.more li p span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.strategy_list ul.more li em {
+    font-size: 14px;
+    color: #90baad;
+    font-weight: 400;
+    font-style: normal;
+}
+/*strategy_list结束*/
+/*strategy结束*/
